@@ -14,9 +14,26 @@ ______________________________________
 
 int Ex4(int arr[], int n){
 	//Your codes here
+	int i;
+	int sort = 1;
+	for(i=0;i<n-1;i++){
+		if (arr[i] < arr[i+1]){
+		  sort = 0;	
+		 		
+	    return 1;
+		}
+	}	
+	for(i=0;i<n-1;i++){
+		if (arr[i]>arr[i+1]){
+			sort = 0;
+			
+		return -1;	
+		}
+	}
+	  return 0;
+}  
 	
-}
-
+		
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	argc--;

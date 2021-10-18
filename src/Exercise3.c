@@ -14,6 +14,31 @@ Ex:
 
 void Ex3(int in_arr[], int n){
 	//Your codes here
+	int i,j;
+	int test1 = 0, test2 = 0;
+	for (i=0, j=n-1; (i<=floor((n-1)/2)) && (j>=ceil((n-1)/2));i++,j--){
+		if (in_arr[i]>=in_arr[i--]){
+			test1 = 1;
+			break;
+		}
+		if (in_arr[j]<=in_arr[j++]){
+			test2 = 1;
+			break;
+		}
+	}   
+	if (test1 == 0 )
+		printf("%d",test1);
+	else
+	   return 0;   
+	if (test2 == 0)
+		printf("%d",test2);
+	else 
+	    return 0;
+
+	
+	
+	
+
 	
 }
 
